@@ -4,9 +4,9 @@ arya
 A custom Data Mining toolkit.
 
 Currently implements:
-ZeroR
-Naive Bayes
-A Decision Tree Classifier (with InfoGain)
+* ZeroR
+* Naive Bayes
+* A Decision Tree Classifier (with InfoGain)
 
 Usage can be viewed in main.py for now
 
