@@ -135,3 +135,6 @@ class Feature:
 		self.name 	= ''
 		self.value 	= ''
 		self.numeric	= False
+
+			
+		
