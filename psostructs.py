@@ -5,6 +5,7 @@ from math import sin, sqrt
 class Particle():
 	def __init__(self):
 		self.model = ""
+		self.id = 0
 		self.positon = []
 		self.pbest = []
 		self.velocity = []
@@ -37,8 +38,8 @@ class Particle():
 		        (1.0 + 0.001 * ((para[0] * para[0]) + (para[1] * para[1])))
     		f6 =  0.5 - (num/denom)
     		errorf6 = 1 - f6
-		self.fitness = f6
-    		return f6, errorf6;
+		#self.fitness = f6
+    		return f6, errorf6
 		
 class Swarm():
 	def __init__(self):
@@ -47,6 +48,7 @@ class Swarm():
 		for i in range(population):
 			p = Particle()
 			model.objectives()
+			p.id = i
 			p.model = model.name
 			p.position = model.outputs
 			p.pbest = model.outputs
